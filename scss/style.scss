@@ -5,7 +5,6 @@
 }
 
 body {
-    background: linear-gradient(208deg, #323264 0%, #323264 59.9%, #643e72 100%);
     margin: 0;
 }
 
@@ -15,15 +14,25 @@ body {
     margin-right: auto;
 }
 
+.background-color-blue {
+    background: linear-gradient(208deg, #323264 0%, #323264 59.9%, #643e72 100%);
+}
 
+.services {
+    position: relative;
+    border-radius: 0 0 12px 12px;
+}
 
 .service-boxes {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    padding-bottom: 60px;
 }
 
 .link-service {
+    position: relative;
+
     a {
         font-family: "Montserrat", sans-serif;
         font-weight: 700;
@@ -32,6 +41,16 @@ body {
         text-transform: uppercase;
         text-decoration: none;
         color: #24A3FF;
+        align-items: center;
+        display: inline-flex;
+    }
+
+    img {
+        margin-left: 2px;
+    }
+
+    .arrow-red {
+        display: none;
     }
 }
 
@@ -85,10 +104,25 @@ body {
     margin-bottom: 0;
 }
 
+.first-shadow {
+    border-radius: 0 0 12px 12px;
+    height: 10px;
+    background-color: #CACADB;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.second-shadow {
+    border-radius: 0 0 12px 12px;
+    height: 10px;
+    background-color: #E7E7F2;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
 @media (min-width: 768px) {
     .service-boxes {
         flex-direction: row;
-
     }
 
     .wrapper {
@@ -105,7 +139,6 @@ body {
 
     .title-service {
         margin-bottom: 60px;
-        margin-top: 15px;
 
         h1 {
             font-size: 38px;
@@ -120,5 +153,43 @@ body {
 
     .service-box {
         width: 261px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .wrapper {
+        width: 1320px;
+    }
+
+    .service-box {
+        width: 400px;
+    }
+
+    .link-service a:hover {
+        color: #F0145A;
+
+        .arrow-red {
+            display: flex;
+        }
+
+        .arrow-blue {
+            display: none;
+        }
+    }
+
+    .arrow-red {
+        position: absolute;
+        left: 81px;
+    }
+
+}
+
+@media (min-width: 1920px) {
+    .wrapper {
+        width: 1600px;
+    }
+
+    .service-box {
+        width: 493px;
     }
 }
