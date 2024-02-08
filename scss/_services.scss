@@ -1,12 +1,16 @@
 .services {
     position: relative;
     border-radius: 0 0 12px 12px;
+    margin-right: 30px;
+    margin-left: 30px;
 }
 
 .service-boxes {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    // display: flex;
+    // flex-direction: column;
+    // flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr;
     padding-bottom: 60px;
 }
 
@@ -101,16 +105,13 @@
 }
 
 @media (min-width: 768px) {
+    .services {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
     .service-boxes {
-        flex-direction: row;
-    }
-
-    .wrapper {
-        width: 648px;
-    }
-
-    .service-box {
-        width: 294px;
+        grid-template-columns: 1fr 1fr;
     }
 
     .service-boxes {
@@ -121,29 +122,20 @@
         margin-bottom: 60px;
 
         h1 {
+            margin-bottom: 60px;
             font-size: 38px;
         }
     }
 }
 
 @media (min-width: 1024px) {
-    .wrapper {
-        width: 904px;
+    .service-boxes {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .service-box {
-        width: 261px;
-    }
 }
 
 @media (min-width: 1440px) {
-    .wrapper {
-        width: 1320px;
-    }
-
-    .service-box {
-        width: 400px;
-    }
 
     .link-service a:hover {
         color: #F0145A;
@@ -165,11 +157,8 @@
 }
 
 @media (min-width: 1920px) {
-    .wrapper {
-        width: 1600px;
-    }
-
-    .service-box {
-        width: 493px;
+    .services {
+        margin-left: 160px;
+        margin-right: 160px;
     }
 }
