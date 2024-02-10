@@ -115,7 +115,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     //  .sponsors-card:nth-child(n + 7) {
     //      display: none;
 
@@ -158,5 +158,28 @@
 @media (min-width: 1024px) {
     .sponsors .sponsors-card {
         grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1920px) {
+    .sponsors .sponsors-card {
+        padding: 0px 100px;
+        border-radius: 12px;
+    }
+
+    .card-1 {
+        border-top-left-radius: 12px;
+    }
+
+    .card-4 {
+        border-top-right-radius: 12px;
+    }
+
+    .card-9 {
+        border-bottom-left-radius: 12px;
+    }
+
+    .card-12 {
+        border-bottom-right-radius: 12px;
     }
 }
