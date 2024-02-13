@@ -117,34 +117,9 @@
 }
 
 @media (max-width: 767px) {
-    //  .sponsors-card:nth-child(n + 7) {
-    //      display: none;
-
     .sponsors {
-        .sponsors-card {
-            .card-7 {
-                display: none;
-            }
-
-            .card-8 {
-                display: none;
-            }
-
-            .card-9 {
-                display: none;
-            }
-
-            .card-10 {
-                display: none;
-            }
-
-            .card-11 {
-                display: none;
-            }
-
-            .card-12 {
-                display: none;
-            }
+        .sponsors-card a:nth-child(n+7) {
+            display: none;
         }
     }
 }

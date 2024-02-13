@@ -1,23 +1,5 @@
 @import '../fonts/montserrat/stylesheet.css';
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-}
-
-.wrapper {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.background-color-blue {
-    background: linear-gradient(208deg, #323264 0%, #323264 59.9%, #643e72 100%);
-}
-
-
+@import "./other";
 @import './services';
 @import './team';
 @import './sponsors';

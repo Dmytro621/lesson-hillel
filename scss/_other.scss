@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 1920px;
+}
+
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.background-color-blue {
+    background: linear-gradient(208deg, #323264 0%, #323264 59.9%, #643e72 100%);
+}
