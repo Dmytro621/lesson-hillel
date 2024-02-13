@@ -140,19 +140,19 @@
     .link-service a:hover {
         color: #F0145A;
 
-        .arrow-red {
-            display: flex;
-        }
+        // .arrow-red {
+        //     display: flex;
+        // }
 
         .arrow-blue {
-            display: none;
+            filter: hue-rotate(150deg);
         }
     }
 
-    .arrow-red {
-        position: absolute;
-        left: 81px;
-    }
+    // .arrow-red {
+    //     position: absolute;
+    //     left: 81px;
+    // }
 
 }
 
