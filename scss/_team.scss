@@ -1,5 +1,6 @@
 .team {
-    margin: 30px 30px 60px;
+    margin-top: 30px;
+    margin-bottom: 60px;
 
     .team-hero {
         background-color: #EDEDF7;
@@ -91,10 +92,11 @@
 }
 
 @media (min-width: 1024px) {
+
     .team-hero {
         display: grid;
         grid-template-columns: 400px 1fr;
-        margin: 60px;
+        margin-bottom: 60px;
 
         .team-image {
             img {

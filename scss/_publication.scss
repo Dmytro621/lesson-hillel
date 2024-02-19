@@ -1,106 +1,116 @@
-.publications {
-    padding: 30px 30px 0px 30px;
+.publications-footer-background {
     background-color: #F5F5FA;
 
-    .publications-title {
+    .publications {
+        padding-top: 30px;
+        padding-bottom: 30px;
 
-        a {
-            display: inline-flex;
-            align-items: center;
-            gap: 2px;
-            font-family: "Montserrat", sans-serif;
-            font-weight: 700;
-            font-size: 14px;
-            letter-spacing: 0.07em;
-            text-transform: uppercase;
-            color: #24A3FF;
-            text-decoration: none;
-            margin-bottom: 5px;
-
-            p {
-                margin: 0;
-            }
-        }
-
-        h1 {
-            font-family: "Montserrat", sans-serif;
-            font-weight: 700;
-            font-size: 30px;
-            background: linear-gradient(-298deg, #f0145a 0%, #ef8080 100%);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-top: 0;
-            margin-bottom: 30px;
-        }
-
-    }
-
-    .publications-cards {
-
-        .publications-card {
-            background-color: #fff;
-            border-radius: 8px;
-            margin-bottom: 30px;
-
-
-            .publications-card-info {
-                padding: 30px;
-            }
+        .publications-title {
 
             a {
+                display: inline-flex;
+                align-items: center;
+                gap: 2px;
                 font-family: "Montserrat", sans-serif;
                 font-weight: 700;
-                font-size: 16px;
-                color: #24A3FF;
-                margin-top: 0;
-                margin-bottom: 15px;
-                text-decoration: none;
-            }
-
-            .publications-data {
-                font-family: "Montserrat", sans-serif;
-                font-weight: 700;
-                font-size: 12px;
-                letter-spacing: 0.08em;
-                text-transform: uppercase;
-                color: #B3B3BA;
-            }
-
-            .publications-box-shadow {
-                height: 4px;
-                width: 100%;
-                background-color: #E6E6F0;
-            }
-
-            .publications-info-text {
-                font-family: "Montserrat", sans-serif;
-                font-weight: 400;
                 font-size: 14px;
-                line-height: 157%;
-                color: #000000;
-                margin-bottom: 0;
+                letter-spacing: 0.07em;
+                text-transform: uppercase;
+                color: #24A3FF;
+                text-decoration: none;
+                margin-bottom: 5px;
+
+                p {
+                    margin: 0;
+                }
             }
 
-            overflow: hidden;
-
-            img {
-                height: 200px;
-                width: 100%;
-                object-fit: cover;
+            h1 {
+                font-family: "Montserrat", sans-serif;
+                font-weight: 700;
+                font-size: 30px;
+                background: linear-gradient(-298deg, #f0145a 0%, #ef8080 100%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                margin-top: 0;
+                margin-bottom: 30px;
             }
 
         }
 
-        .publications-card:last-child {
-            margin-bottom: 0;
+        .publications-cards {
+
+            .publications-card {
+                background-color: #fff;
+                border-radius: 8px;
+                margin-bottom: 30px;
+
+
+                .publications-card-info {
+                    padding: 30px;
+                }
+
+                a {
+                    font-family: "Montserrat", sans-serif;
+                    font-weight: 700;
+                    font-size: 16px;
+                    color: #24A3FF;
+                    margin-top: 0;
+                    margin-bottom: 15px;
+                    text-decoration: none;
+                }
+
+                .publications-data {
+                    font-family: "Montserrat", sans-serif;
+                    font-weight: 700;
+                    font-size: 12px;
+                    letter-spacing: 0.08em;
+                    text-transform: uppercase;
+                    color: #B3B3BA;
+                }
+
+                .publications-box-shadow {
+                    height: 4px;
+                    width: 100%;
+                    background-color: #E6E6F0;
+                }
+
+                .publications-info-text {
+                    font-family: "Montserrat", sans-serif;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 157%;
+                    color: #000000;
+                    margin-bottom: 0;
+                }
+
+                overflow: hidden;
+
+                img {
+                    height: 200px;
+                    width: 100%;
+                    object-fit: cover;
+                }
+
+            }
+
+            .publications-card:last-child {
+                margin-bottom: 0;
+            }
         }
     }
 }
 
 @media (min-width: 768px) {
+    .wrapper {
+        padding: 0 60px;
+
+    }
+
     .publications {
-        padding: 30px 60px 0px 60px;
+
+        padding-top: 30px;
 
         .publications-title a {
             margin-bottom: 10px;
@@ -124,20 +134,25 @@
 }
 
 @media (min-width: 1024px) {
+    .publications-footer-background {
+        .publications {
+            .publications-cards {
+                grid-template-columns: 1fr 1fr 1fr;
 
-    .publications {
-        .publications-cards {
-            grid-template-columns: 1fr 1fr 1fr;
+                .long-card {
+                    grid-column: span 1;
+                }
 
-            .long-card {
-                grid-column: span 1;
+                .publications-card:last-child {
+                    margin-bottom: 30px;
+                }
             }
         }
     }
 }
 
 @media (min-width: 1920px) {
-    .publications {
-        padding: 30px 160px 0px 160px;
+    .wrapper {
+        padding: 0 160px;
     }
 }
