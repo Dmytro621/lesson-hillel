@@ -690,6 +690,7 @@ footer .footer-company p {
   font-size: 16px;
   text-align: center;
   color: #B3B3BA;
+  margin: 0;
 }
 
 @media (min-width: 768px) {
@@ -698,9 +699,37 @@ footer .footer-company p {
     flex-direction: row;
     justify-content: space-between;
   }
-  .footer .footer {
+  .footer span {
+    width: 6px;
+    height: 6px;
+    background-color: #B3B3BA;
+    border-radius: 100%;
+    margin: 0 10px;
+  }
+  .footer .footer-info {
     display: flex;
     flex-direction: column;
+  }
+  .footer .footer-info .footer-info-place {
+    display: flex;
+    align-items: center;
+  }
+  .footer .footer-info .footer-info-place p {
+    margin: 0;
+  }
+  .footer .footer-info .footer-info-contact {
+    display: flex;
+    align-items: center;
+  }
+  .footer .footer-info .footer-info-contact img {
+    margin: 0;
+  }
+  .footer .footer-info .footer-info-contact p {
+    margin: 0;
+    white-space: nowrap;
+  }
+  .footer .footer-company {
+    padding-top: 30px;
   }
 }
 

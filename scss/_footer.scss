@@ -71,6 +71,7 @@ footer {
             font-size: 16px;
             text-align: center;
             color: #B3B3BA;
+            margin: 0;
         }
     }
 }
@@ -81,9 +82,44 @@ footer {
         flex-direction: row;
         justify-content: space-between;
 
-        .footer {
+        span {
+            width: 6px;
+            height: 6px;
+            background-color: #B3B3BA;
+            border-radius: 100%;
+            margin: 0 10px;
+        }
+
+        .footer-info {
             display: flex;
             flex-direction: column;
+
+            .footer-info-place {
+                display: flex;
+                align-items: center;
+
+                p {
+                    margin: 0;
+                }
+            }
+
+            .footer-info-contact {
+                display: flex;
+                align-items: center;
+
+                img {
+                    margin: 0;
+                }
+
+                p {
+                    margin: 0;
+                    white-space: nowrap;
+                }
+            }
+        }
+
+        .footer-company {
+            padding-top: 30px;
         }
     }
 }
